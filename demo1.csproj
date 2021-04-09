@@ -67,9 +67,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Default.aspx" />
-    <Content Include="Form1.aspx" />
-    <Content Include="Global.asax" />
     <Content Include="HomeWork.aspx" />
     <Content Include="img\chaxun tubiao.gif" />
     <Content Include="img\dakuang1.gif" />
@@ -106,28 +103,10 @@
     <Content Include="img\tushuleixingguanli.gif" />
     <Content Include="img\zu zhe pai hang.gif" />
     <Content Include="img\zuzheyanzheng.gif" />
-    <Content Include="Login.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Code\SqlHelper.cs" />
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Form1.aspx.cs">
-      <DependentUpon>Form1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Form1.aspx.designer.cs">
-      <DependentUpon>Form1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
     <Compile Include="HomeWork.aspx.cs">
       <DependentUpon>HomeWork.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -135,15 +114,7 @@
     <Compile Include="HomeWork.aspx.designer.cs">
       <DependentUpon>HomeWork.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Util.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
