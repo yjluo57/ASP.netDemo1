@@ -116,6 +116,8 @@
                         <asp:Button ID="btnAdd" runat="server" Text="添加" OnClick="Button3_Click" />
                         <asp:Button ID="btnChange" runat="server" Text="修改" />
                         <asp:Button ID="Button5" runat="server" Text="取消" />
+                        <br />
+                        <asp:Button ID="Button6" runat="server" Text="分支管理练习（master提交）" />
                     </td>
                 </tr>
                 </tr>
