@@ -24,10 +24,21 @@ namespace WorkDemo.App_Code
             using (SqlConnection conn = new SqlConnection(connString))
             {
                 SqlCommand cmd = new SqlCommand();
-                PreParedCommand(sql, commandParams, conn, cmd);
+                PreparedCommand(sql, commandParams, conn, cmd);
 
                 return cmd.ExecuteNonQuery();
             }
+        }
+
+        private static void PreparedCommand(string sql, SqlParameter[] commandParams, SqlConnection conn, SqlCommand cmd)
+        {
+            //判断数据库连接对象若不是打开状态则打开
+            if (conn.State != ConnectionState.Open)
+                conn.Open();
+            cmd.CommandText = sql;//设置执行的SQL语句
+            cmd.Connection = conn;//关联数据库连接对象
+            if (commandParams != null)
+                cmd.Parameters.AddRange(commandParams);
         }
 
         /// <summary>
@@ -43,7 +54,7 @@ namespace WorkDemo.App_Code
             using (SqlConnection conn = new SqlConnection(connString))
             {
                 SqlCommand cmd = new SqlCommand();
-                PreParedCommand(sql, commandParams, conn, cmd);
+                PreparedCommand(sql, commandParams, conn, cmd);
 
                 return cmd.ExecuteScalar();
             }
@@ -59,7 +70,7 @@ namespace WorkDemo.App_Code
         {
             SqlConnection conn = new SqlConnection(connString);
             SqlCommand cmd = new SqlCommand();
-            PreParedCommand(sql, commandParams, conn, cmd);
+            PreparedCommand(sql, commandParams, conn, cmd);
 
             //CommandBehavior.CloseConnection: 若dataReader对象关闭则自动关闭connection对象
             return cmd.ExecuteReader(CommandBehavior.CloseConnection);
@@ -76,7 +87,7 @@ namespace WorkDemo.App_Code
             using (SqlConnection conn = new SqlConnection(connString))
             {
                 SqlCommand cmd = new SqlCommand();
-                PreParedCommand(sql, commandParams, conn, cmd);
+                PreparedCommand(sql, commandParams, conn, cmd);
 
                 //创建适配器对象
                 using (SqlDataAdapter dap = new SqlDataAdapter())
@@ -96,21 +107,5 @@ namespace WorkDemo.App_Code
         /// <param name="commandParams"></param>
         /// <param name="conn"></param>
         /// <param name="cmd"></param>
-        private static void PreParedCommand(string sql, SqlParameter[] commandParams, SqlConnection conn, SqlCommand cmd)
-        {
-            //判断数据库连接对象若不是打开状态则打开
-            if (conn.State != ConnectionState.Open)
-                conn.Open();
-            cmd.CommandText = sql;//设置执行的SQL语句
-            cmd.Connection = conn;//关联数据库连接对象
-
-            if (commandParams != null)
-            {
-                foreach (SqlParameter sp in commandParams)
-                {
-                    cmd.Parameters.Add(sp);//遍历参数赋给command对象参数集合接收
-                }
-            }
-        }
     }
 }
