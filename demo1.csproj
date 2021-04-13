@@ -67,15 +67,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Themes\主题1\css\bootstrap-theme.css" />
-    <Content Include="App_Themes\主题1\css\bootstrap-theme.min.css" />
-    <Content Include="App_Themes\主题1\css\bootstrap.css" />
-    <Content Include="App_Themes\主题1\css\bootstrap.min.css" />
-    <Content Include="App_Themes\主题1\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="App_Themes\主题1\js\bootstrap.js" />
-    <Content Include="App_Themes\主题1\js\bootstrap.min.js" />
-    <Content Include="App_Themes\主题1\js\jquery-2.0.0.min.js" />
-    <Content Include="App_Themes\主题1\js\npm.js" />
+    <Content Include="App_Themes\theme1\css\bootstrap-theme.css" />
+    <Content Include="App_Themes\theme1\css\bootstrap-theme.min.css" />
+    <Content Include="App_Themes\theme1\css\bootstrap.css" />
+    <Content Include="App_Themes\theme1\css\bootstrap.min.css" />
+    <Content Include="App_Themes\theme1\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="App_Themes\theme1\js\bootstrap.js" />
+    <Content Include="App_Themes\theme1\js\bootstrap.min.js" />
+    <Content Include="App_Themes\theme1\js\jquery-2.0.0.min.js" />
+    <Content Include="App_Themes\theme1\js\npm.js" />
     <Content Include="HomeWork.aspx" />
     <Content Include="img\chaxun tubiao.gif" />
     <Content Include="img\dakuang1.gif" />
@@ -126,14 +126,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Themes\主题1\css\bootstrap-theme.css.map" />
-    <Content Include="App_Themes\主题1\css\bootstrap-theme.min.css.map" />
-    <Content Include="App_Themes\主题1\css\bootstrap.css.map" />
-    <Content Include="App_Themes\主题1\css\bootstrap.min.css.map" />
-    <Content Include="App_Themes\主题1\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="App_Themes\主题1\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="App_Themes\主题1\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="App_Themes\主题1\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="App_Themes\theme1\css\bootstrap-theme.css.map" />
+    <Content Include="App_Themes\theme1\css\bootstrap-theme.min.css.map" />
+    <Content Include="App_Themes\theme1\css\bootstrap.css.map" />
+    <Content Include="App_Themes\theme1\css\bootstrap.min.css.map" />
+    <Content Include="App_Themes\theme1\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="App_Themes\theme1\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="App_Themes\theme1\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="App_Themes\theme1\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

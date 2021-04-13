@@ -22,6 +22,8 @@
             width: 108px;
         }
     </style>
+    <link href="App_Themes/theme1/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="App_Themes/theme1/css/bootstrap.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -113,9 +115,9 @@
                 </tr>
                 <tr>
                     <td class="auto-style3" colspan="2" rowspan="1">
-                        <asp:Button ID="btnAdd" runat="server" Text="添加" OnClick="Button3_Click" />
-                        <asp:Button ID="btnChange" runat="server" Text="修改" />
-                        <asp:Button ID="Button5" runat="server" Text="取消" />
+                        <asp:Button ID="btnAdd" runat="server" Text="添加" OnClick="Button3_Click" CssClass="btn-group-justified"/>
+                        <asp:Button ID="btnChange" runat="server" Text="修改" CssClass="btn-toolbar"/>
+                        <asp:Button ID="Button5" runat="server" Text="取消" CssClass="btn-sm"/>
                     </td>
                 </tr>
                 </tr>
