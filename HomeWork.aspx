@@ -34,7 +34,7 @@
                     <td class="auto-style3">条形码：</td>
                     <td>
                         <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></td>
-
+                </tr>
                 <tr>
                     <td class="auto-style3">图书名称：</td>
                     <td>
@@ -119,7 +119,6 @@
                         <asp:Button ID="btnChange" runat="server" Text="修改" CssClass="btn-toolbar"/>
                         <asp:Button ID="Button5" runat="server" Text="取消" CssClass="btn-sm"/>
                     </td>
-                </tr>
                 </tr>
             </table>
         </div>
