@@ -77,6 +77,7 @@
     <Content Include="App_Themes\theme1\js\jquery-2.0.0.min.js" />
     <Content Include="App_Themes\theme1\js\npm.js" />
     <Content Include="Global.asax" />
+    <Content Include="GridView.aspx" />
     <Content Include="HomeWork.aspx" />
     <Content Include="img\chaxun tubiao.gif" />
     <Content Include="img\dakuang1.gif" />
@@ -120,6 +121,13 @@
     <Compile Include="App_Code\SqlHelper.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GridView.aspx.cs">
+      <DependentUpon>GridView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GridView.aspx.designer.cs">
+      <DependentUpon>GridView.aspx</DependentUpon>
     </Compile>
     <Compile Include="HomeWork.aspx.cs">
       <DependentUpon>HomeWork.aspx</DependentUpon>
