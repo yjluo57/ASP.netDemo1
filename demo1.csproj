@@ -115,6 +115,7 @@
     <Content Include="img\zu zhe pai hang.gif" />
     <Content Include="img\zuzheyanzheng.gif" />
     <Content Include="RequiredFieldValidator.aspx" />
+    <Content Include="Test1.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -143,6 +144,13 @@
     </Compile>
     <Compile Include="RequiredFieldValidator.aspx.designer.cs">
       <DependentUpon>RequiredFieldValidator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test1.aspx.cs">
+      <DependentUpon>Test1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test1.aspx.designer.cs">
+      <DependentUpon>Test1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
